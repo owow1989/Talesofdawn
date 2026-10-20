@@ -1,1 +1,87 @@
-file:///C:/Users/User/AppData/Local/Temp/f6b4a81d-c953-4b30-8cb1-fca3a69727b1_A0E693BCE8B4_BDE9B589E9A8BDE585.zip.7b1/index.html
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111316">
+<title>破晓传说｜角色成长面板</title>
+<style>
+:root{--bg:#101114;--panel:#1d1f23;--panel2:#25272c;--red:#bd302e;--gold:#f2c66d;--cream:#f4e8d0;--muted:#bcb5ab;--line:#51443b;--green:#38d6a0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#29201e 0,#101114 48%);color:var(--cream);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+.app{max-width:760px;margin:auto;padding:16px 14px 32px}.top{display:flex;align-items:center;gap:12px;border-bottom:3px solid var(--red);padding:8px 2px 16px}.mark{background:var(--red);border-radius:10px;padding:12px;font-size:25px}.brand{flex:1}.brand h1{font-size:22px;margin:0;letter-spacing:1px}.brand small{color:var(--red);font-weight:800;letter-spacing:1.5px}.level{text-align:right}.level small{display:block;color:var(--muted)}.level strong{font-size:25px;color:var(--gold)}
+h2{font-size:17px;margin:0 0 12px}p{line-height:1.55}.hero{background:linear-gradient(135deg,#252326,#17181b);border:1px solid var(--line);border-radius:16px;padding:16px;margin:16px 0}.heroRow{display:flex;align-items:center;justify-content:space-between;gap:12px}.hero .label{font-size:11px;color:var(--muted);letter-spacing:1px}.score{font-size:36px;font-weight:850;color:var(--gold);margin:4px 0}.score span{font-size:13px;color:var(--muted);font-weight:500}.orb{width:70px;height:70px;border:2px solid var(--red);border-radius:50%;display:grid;place-items:center;background:#382323;font-size:30px}.bar{height:8px;background:#08090b;border-radius:99px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--red),#ed9a4a);border-radius:99px;transition:width .2s}.expbar .fill{background:linear-gradient(90deg,#c28a32,var(--gold))}.subrow{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:10px}
+.tabs{display:flex;background:#191a1d;border:1px solid #3b3632;border-radius:12px;padding:4px;gap:4px;margin:14px 0}.tab{flex:1;padding:11px 5px;border:0;border-radius:9px;background:transparent;color:var(--muted);font-size:14px;font-weight:700}.tab.active{background:var(--red);color:white}
+.stat{background:var(--panel);border:1px solid #393737;border-radius:13px;padding:13px;margin:10px 0}.stathead{display:flex;align-items:center;gap:10px}.staticon{width:40px;height:40px;border-radius:10px;background:#382323;display:grid;place-items:center;font-size:21px}.statname{flex:1}.statname strong{display:block;font-size:16px}.statname small{font-size:10px;color:var(--muted);letter-spacing:.8px}.value{font-size:25px;color:var(--gold);font-weight:800;min-width:40px;text-align:right}.desc{font-size:12px;color:var(--muted);margin:10px 0 6px}.range{width:100%;accent-color:var(--red);height:25px}.minmax{display:flex;justify-content:space-between;color:#888;font-size:10px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.btn{border:1px solid var(--line);background:#29282a;color:var(--cream);padding:11px 13px;border-radius:10px;font-weight:700;font-size:13px}.btn.primary{background:var(--red);border-color:var(--red);color:white}.btn.gold{background:#3c3020;border-color:#806332;color:var(--gold)}.btn:active{transform:scale(.98)}
+label{display:block;color:var(--muted);font-size:12px;margin:12px 0 6px}textarea,input[type=date],input[type=text]{width:100%;border:1px solid #51443b;background:#151619;color:var(--cream);padding:12px;border-radius:10px;font:inherit}textarea{min-height:110px;resize:vertical} .hint{font-size:12px;color:var(--muted);line-height:1.5}.log{background:var(--panel);border:1px solid #393737;border-radius:12px;padding:13px;margin:9px 0}.logtop{display:flex;justify-content:space-between;gap:8px;color:var(--gold);font-size:12px;margin-bottom:8px}.logtext{white-space:pre-wrap;line-height:1.5;font-size:14px}.empty{text-align:center;padding:24px 12px;color:var(--muted);background:var(--panel);border-radius:12px}.hidden{display:none!important}.footer{text-align:center;color:var(--muted);font-size:11px;line-height:1.6;margin:24px 8px 0}.pill{display:inline-block;border:1px solid #5d4a2e;border-radius:99px;padding:4px 8px;color:var(--gold);font-size:11px}
+@media(min-width:600px){.grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px}.brand h1{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div class="mark">⚔</div><div class="brand"><h1>破晓传说</h1><small>TALES OF DAWN · PERSONAL RPG</small></div><div class="level"><small>角色等级</small><strong id="levelText">LV. 37</strong></div></header>
+<section class="hero">
+ <div class="heroRow"><div><div class="label">OVERALL ATTRIBUTE</div><div class="score"><span id="overall">58</span><span> / 100</span></div><div class="hint">六项属性综合值</div></div><div class="orb">♜</div></div>
+ <div class="bar" style="margin-top:14px"><div class="fill" id="overallBar" style="width:58%"></div></div>
+ <div class="subrow"><span>成长经验 EXP</span><span id="expText">0 / 100</span></div><div class="bar expbar" style="margin-top:6px"><div class="fill" id="expBar" style="width:0%"></div></div>
+</section>
+<div class="tabs"><button class="tab active" data-tab="status">属性管理</button><button class="tab" data-tab="daily">每日成长</button><button class="tab" data-tab="history">成长趋势</button></div>
+<section id="status">
+ <h2>▰ 核心能力参数 <span class="pill">点击滑杆调整</span></h2>
+ <div class="grid" id="stats"></div>
+ <div class="actions"><button class="btn gold" id="saveSnapshot">记录今日属性</button><button class="btn" id="resetStats">恢复初始值</button><button class="btn" id="allPlus">全属性 +1</button></div>
+ <p class="hint">属性是个人成长的自我记录，不是客观人格评分。体力与精力会随睡眠、工作和压力波动，不必每天增加。</p>
+</section>
+<section id="daily" class="hidden">
+ <h2>▰ 今日任务结算</h2>
+ <label for="logDate">记录日期</label><input id="logDate" type="date">
+ <label for="logTitle">今日主题（可选）</label><input id="logTitle" type="text" placeholder="例如：照顾好自己的一天">
+ <label for="logNote">今日记录</label><textarea id="logNote" placeholder="例如：阅读20分钟、完成餐厅工作、散步、跟客人自然交流，或今天压力比较大但仍然好好吃饭……"></textarea>
+ <div class="actions"><button class="btn primary" id="saveLog">保存记录 · EXP +10</button><button class="btn" id="clearDraft">清空输入</button></div>
+ <p class="hint">每保存一条记录，经验值增加10；经验达到100时等级提升。数据会保存在这台设备的浏览器中。</p>
+ <h2 style="margin-top:22px">▰ 最近记录</h2><div id="recentLogs"></div>
+</section>
+<section id="history" class="hidden">
+ <h2>▰ 属性成长趋势</h2><p class="hint">每次点击「记录今日属性」会保存一份属性快照。下方展示最近的记录，帮助你看见长期变化。</p><div id="snapshots"></div>
+ <div class="actions"><button class="btn" id="exportBtn">导出备份 JSON</button><button class="btn" id="importBtn">导入备份 JSON</button><button class="btn" id="downloadCsv">导出成长日志 CSV</button><input id="importFile" type="file" accept=".json,application/json" class="hidden"></div>
+ <p class="hint">建议定期导出备份。浏览器资料被清除、换手机或更换浏览器后，本机保存的数据不会自动同步。</p>
+</section>
+<div class="footer">在忙碌的世界里，依然选择温柔，这也是一种强大。<br>数据保存在本机浏览器 · 可随时导出备份</div>
+</div>
+<script>
+const DEFAULT={level:37,xp:0,stats:{wisdom:62,aura:58,leadership:65,relaxation:42,stamina:60,energy:38},logs:[],snapshots:[]};
+const defs=[
+ {key:'wisdom',name:'智慧',en:'WISDOM',icon:'🧠',desc:'阅读、学习、分析与判断'},
+ {key:'aura',name:'气质',en:'CHARISMA',icon:'✦',desc:'仪态、亲和力与个人风格'},
+ {key:'leadership',name:'领导力',en:'LEADERSHIP',icon:'♜',desc:'决策、沟通与承担责任'},
+ {key:'relaxation',name:'松弛感',en:'COMPOSURE',icon:'🍃',desc:'情绪稳定、放松与自然表达'},
+ {key:'stamina',name:'体力',en:'STAMINA',icon:'✚',desc:'身体素质、耐力与恢复'},
+ {key:'energy',name:'精力',en:'ENERGY',icon:'ϟ',desc:'精神状态、专注力与活力'}
+];
+let data=load();
+function load(){try{const x=JSON.parse(localStorage.getItem('lifeRpgSaveV1'));return x?{...structuredClone(DEFAULT),...x,stats:{...DEFAULT.stats,...x.stats},logs:x.logs||[],snapshots:x.snapshots||[]}:structuredClone(DEFAULT)}catch(e){return structuredClone(DEFAULT)}}
+function persist(){localStorage.setItem('lifeRpgSaveV1',JSON.stringify(data));renderHeader()}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function today(){return new Date().toLocaleDateString('en-CA')}
+function renderHeader(){const vals=Object.values(data.stats);const avg=Math.round(vals.reduce((a,b)=>a+b,0)/vals.length);document.getElementById('overall').textContent=avg;document.getElementById('overallBar').style.width=avg+'%';document.getElementById('levelText').textContent='LV. '+data.level;document.getElementById('expText').textContent=data.xp+' / 100';document.getElementById('expBar').style.width=data.xp+'%'}
+function renderStats(){document.getElementById('stats').innerHTML=defs.map(d=>`<article class="stat"><div class="stathead"><div class="staticon">${d.icon}</div><div class="statname"><strong>${d.name}</strong><small>${d.en}</small></div><div class="value" id="val-${d.key}">${data.stats[d.key]}</div></div><div class="desc">${d.desc}</div><input class="range" aria-label="${d.name}" type="range" min="0" max="100" value="${data.stats[d.key]}" data-stat="${d.key}"><div class="minmax"><span>0</span><span>50</span><span>100</span></div></article>`).join('');document.querySelectorAll('[data-stat]').forEach(el=>el.addEventListener('input',e=>{const k=e.target.dataset.stat;data.stats[k]=Number(e.target.value);document.getElementById('val-'+k).textContent=e.target.value;persist()}))}
+function renderLogs(){const el=document.getElementById('recentLogs');if(!data.logs.length){el.innerHTML='<div class="empty">还没有成长记录。写下今天值得肯定的一件事，开始你的第一条记录。</div>';return}el.innerHTML=data.logs.slice(0,20).map(l=>`<article class="log"><div class="logtop"><span>${esc(l.date)} · ${esc(l.title||'每日成长')}</span><span>EXP +10</span></div><div class="logtext">${esc(l.note)}</div></article>`).join('')}
+function renderSnapshots(){const el=document.getElementById('snapshots');if(!data.snapshots.length){el.innerHTML='<div class="empty">还没有属性快照。调整属性后，点击「记录今日属性」。</div>';return}el.innerHTML=[...data.snapshots].reverse().slice(0,30).map(s=>`<article class="log"><div class="logtop"><span>${esc(s.date)} · 综合 ${s.overall}/100</span><span>LV. ${s.level}</span></div>${defs.map(d=>`<div style="display:flex;justify-content:space-between;font-size:12px;margin:7px 0"><span>${d.name}</span><span style="color:var(--gold)">${s.stats[d.key]}</span></div><div class="bar"><div class="fill" style="width:${s.stats[d.key]}%"></div></div>`).join('')}</article>`).join('')}
+function render(){renderHeader();renderStats();renderLogs();renderSnapshots()}
+function setTab(tab){document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));['status','daily','history'].forEach(id=>document.getElementById(id).classList.toggle('hidden',id!==tab))}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));
+document.getElementById('logDate').value=today();
+document.getElementById('saveLog').addEventListener('click',()=>{const note=document.getElementById('logNote').value.trim();if(!note){alert('请先写下今天的记录。');return}data.logs.unshift({date:document.getElementById('logDate').value||today(),title:document.getElementById('logTitle').value.trim(),note,createdAt:new Date().toISOString()});data.xp+=10;if(data.xp>=100){data.level+=Math.floor(data.xp/100);data.xp%=100;alert('升级！你的角色等级提升了。')}persist();document.getElementById('logTitle').value='';document.getElementById('logNote').value='';renderLogs();renderSnapshots();setTab('daily')});
+document.getElementById('clearDraft').addEventListener('click',()=>{document.getElementById('logTitle').value='';document.getElementById('logNote').value=''});
+document.getElementById('saveSnapshot').addEventListener('click',()=>{const vals=Object.values(data.stats);data.snapshots.push({date:today(),stats:{...data.stats},overall:Math.round(vals.reduce((a,b)=>a+b,0)/vals.length),level:data.level});persist();renderSnapshots();alert('今日属性快照已保存。');});
+document.getElementById('resetStats').addEventListener('click',()=>{if(confirm('恢复六项属性的初始示范值？历史记录不会删除。')){data.stats={...DEFAULT.stats};persist();renderStats()}});
+document.getElementById('allPlus').addEventListener('click',()=>{Object.keys(data.stats).forEach(k=>data.stats[k]=Math.min(100,data.stats[k]+1));persist();renderStats()});
+document.getElementById('exportBtn').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});download(blob,'life-rpg-backup-'+today()+'.json')});
+document.getElementById('importBtn').addEventListener('click',()=>document.getElementById('importFile').click());
+document.getElementById('importFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const x=JSON.parse(await f.text());if(!x.stats||!Array.isArray(x.logs))throw Error();if(confirm('导入备份将覆盖当前数据，确定继续吗？')){data={...structuredClone(DEFAULT),...x,stats:{...DEFAULT.stats,...x.stats},logs:x.logs||[],snapshots:x.snapshots||[]};persist();render();alert('备份已导入。')}}catch(err){alert('无法读取此备份文件，请选择本应用导出的 JSON。')}e.target.value=''});
+document.getElementById('downloadCsv').addEventListener('click',()=>{const rows=[['日期','主题','记录'],...data.logs.map(l=>[l.date,l.title||'',l.note])];const csv=rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\r\n');download(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}),'life-rpg-logs-'+today()+'.csv')});
+function download(blob,name){const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+render();
+</script>
+</body>
+</html>
