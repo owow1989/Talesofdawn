@@ -1,2 +1,2 @@
 # Talesofdawn
-It is a website that 
+Tracking my journey to becoming stronger.
